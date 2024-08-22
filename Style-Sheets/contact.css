@@ -1,0 +1,119 @@
+.contact-us {
+    max-width: 800px;
+    margin: 80px auto 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #D1E8E2;
+}
+
+.contact-us h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-us p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-form label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 18px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus{
+  border: 2px solid #28a745;
+  outline: none;
+}
+
+.contact-form textarea{
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+    padding: 6px;
+    width: 30%;
+    margin-left: 35%;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: 0 0 10px 5px #2c3e50;
+    color: #218838;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* .contact-info {
+    margin-top: 30px;
+    background-color: #18bc9c;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contact-info h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-info p {
+    text-align: center;
+} */
+ 
+/* Mobile Screen Adjustments */
+@media (max-width: 600px) {
+    .contact-us {
+        width: 90%;
+        margin: 80px auto 15px;
+        padding: 15px;
+    }
+
+    .contact-us h1{
+        font-size: 30px;
+    }
+
+    .contact-us p{
+        font-size: 16px;
+        padding: 0 25px 0;
+    }
+    .contact-form label {
+        margin-top: 15px;
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        width: 50%;
+        margin: 10px 0 0 100px;
+        padding: 8px;
+        font-size: 15px;
+    }
+}

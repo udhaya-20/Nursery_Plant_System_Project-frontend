@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.container input{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; 
+}
+
+button.signupbtn, .cancelbtn {
+  flex: 1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button.signupbtn{
+  background-color: dodgerblue;
+}
+
+button.signupbtn:hover {
+  background-color:#04AA6D;
+}
+
+.cancelbtn {
+  background-color: gray;
+}
+.cancelbtn:hover{
+  background-color: #f44336;
+}
+
+.container .btn-container {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.signup-page {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 40px;
+}
+
+.signup-content {
+  background-color: #fefefe;
+  margin: 2% auto 15% auto;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 40%; 
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 600px) {
+    button.signupbtn, .cancelbtn {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+    
+    .signup-content {
+        width: 80%;
+        margin: 5% auto; 
+    }
+    
+    input[type=text], input[type=email], input[type=password] {
+        padding: 10px 15px;
+    }
+
+    .container{
+      padding: 25px;
+    }
+
+    .container .btn-container {
+        padding: 0;
+        margin-top: 10px;
+    }
+}

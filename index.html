@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Green Nursery</title>
+    <link rel="icon" href="images/go_green-favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+    <link rel="stylesheet" href="Style-Sheets/navbar.css">
+    <link rel="stylesheet" href="Style-Sheets/index.css">
+    <link rel="stylesheet" href="Style-Sheets/footer.css">
+  </head>
+<body style="background-color:white;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Moblie Screen Toggle Bar -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Navbar logo -->
+        <a class="navbar-brand" href=""><img src="images/nursery-brand-logo.png" alt="error"></a>
+
+        <!-- Search bar -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <i class="glyphicon glyphicon-search"></i>
+            <input type="text" id="search" class="nosubmit" placeholder="Search..">
+          </div>
+        </form>
+      </div>
+
+      <!-- Navbar Menu lists -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+
+          <!-- Dropdown Menu -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="indoor.html">Indoor Plants</a></li>
+              <li><a href="flower1.html">Flowering Plants</a></li>
+              <li><a href="herbal.html">Herbal Plants</a></li>
+              <li><a href="airpurifier.html">Air Purifier Plants</a></li>
+              <li><a href="balcony.html">Balcony Plants</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <!-- Shopping cart -->
+          <li><a class="cart-btn" href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+
+        <!-- Authentication buttons -->
+        <ul class="nav navbar-nav navbar-right">
+          <button class="signin-btn" onclick="window.location.href='signup.html';">Sign Up</button>
+          <button class="login-btn" onclick="window.location.href='login.html';">Login</button>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slideshow images -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="Images/homepic0.jpg" width="100%" height="350px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="Images/homepic1.jpg" width="100%" height="350px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="Images/homepic2.jpg" width="100%" height="350px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="Images/homepic3.jpg" width="100%" height="350px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="Images/homepic4.jpg" width="100%" height="350px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="Images/homepic5.jpg" width="100%" height="350px">
+    </div>
+  </div><br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <!-- Products -->
+  <h1 class="our-prod" >*-* OUR PRODUCTS *-*</h1><br>
+    <div class="row" style="text-align: center;">
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/indoor1.jpg">
+          <h4 class="plant-name">Areca Palm Plant</h4>
+          <!-- Star rating -->
+          <div class="star-rating" id="rating1">
+            <input type="radio" id="rating1-star5" name="rating1" value="5"><label for="rating1-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating1-star4" name="rating1" value="4"><label for="rating1-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating1-star3" name="rating1" value="3"><label for="rating1-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating1-star2" name="rating1" value="2"><label for="rating1-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating1-star1" name="rating1" value="1"><label for="rating1-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/flowering6.jpg">
+            <h4 class="plant-name">Rose Plant</h4>
+            <div class="star-rating" id="rating2">
+              <input type="radio" id="rating2-star5" name="rating2" value="5"><label for="rating2-star5" title="5 stars">&#9733;</label>
+              <input type="radio" id="rating2-star4" name="rating2" value="4"><label for="rating2-star4" title="4 stars">&#9733;</label>
+              <input type="radio" id="rating2-star3" name="rating2" value="3"><label for="rating2-star3" title="3 stars">&#9733;</label>
+              <input type="radio" id="rating2-star2" name="rating2" value="2"><label for="rating2-star2" title="2 stars">&#9733;</label>
+              <input type="radio" id="rating2-star1" name="rating2" value="1"><label for="rating2-star1" title="1 star">&#9733;</label>
+            </div>
+            <h4 class="plant-price">Rs: ₹50.00</h4>
+            <button class="buy-now">Buy Now</button>
+            <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/indoor7.jpg">
+          <h4 class="plant-name">Money Plant</h4>
+          <div class="star-rating" id="rating3">
+            <input type="radio" id="rating3-star5" name="rating3" value="5"><label for="rating3-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating3-star4" name="rating3" value="4"><label for="rating3-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating3-star3" name="rating3" value="3"><label for="rating3-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating3-star2" name="rating3" value="2"><label for="rating3-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating3-star1" name="rating3" value="1"><label for="rating3-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹100.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/flowering4.jpg">
+          <h4 class="plant-name">Jasmine Plant</h4>
+          <div class="star-rating" id="rating4">
+            <input type="radio" id="rating4-star5" name="rating4" value="5"><label for="rating4-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating4-star4" name="rating4" value="4"><label for="rating4-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating4-star3" name="rating4" value="3"><label for="rating4-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating4-star2" name="rating4" value="2"><label for="rating4-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating4-star1" name="rating4" value="1"><label for="rating4-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/flowering2.jpg">
+          <h4 class="plant-name">Hibiscus Plant</h4>
+          <div class="star-rating" id="rating5">
+            <input type="radio" id="rating5-star5" name="rating5" value="5"><label for="rating5-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating5-star4" name="rating5" value="4"><label for="rating5-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating5-star3" name="rating5" value="3"><label for="rating5-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating5-star2" name="rating5" value="2"><label for="rating5-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating5-star1" name="rating5" value="1"><label for="rating5-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹100.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/airpurifier6.jpg">
+          <h4 class="plant-name">Spider Plant</h4>
+          <div class="star-rating" id="rating6">
+            <input type="radio" id="rating6-star5" name="rating6" value="5"><label for="rating6-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating6-star4" name="rating6" value="4"><label for="rating6-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating6-star3" name="rating6" value="3"><label for="rating6-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating6-star2" name="rating6" value="2"><label for="rating6-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating6-star1" name="rating6" value="1"><label for="rating6-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/balcony1.jpg">
+          <h4 class="plant-name">Ajiwain Plant</h4>
+          <div class="star-rating" id="rating7">
+            <input type="radio" id="rating7-star5" name="rating7" value="5"><label for="rating7-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating7-star4" name="rating7" value="4"><label for="rating7-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating7-star3" name="rating7" value="3"><label for="rating7-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating7-star2" name="rating7" value="2"><label for="rating7-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating7-star1" name="rating7" value="1"><label for="rating7-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/airpurifier1.jpg">
+          <h4 class="plant-name">Peperomia Plant</h4>
+          <div class="star-rating" id="rating8">
+            <input type="radio" id="rating8-star5" name="rating8" value="5"><label for="rating8-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating8-star4" name="rating8" value="4"><label for="rating8-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating8-star3" name="rating8" value="3"><label for="rating8-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating8-star2" name="rating8" value="2"><label for="rating8-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating8-star1" name="rating8" value="1"><label for="rating8-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div><br>
+    </div>
+
+        
+    <div class="category-bg">
+      <h1 style="text-align:center;font-family: gabriola;font-size:40px; padding: 10px 0 4px 0; font-weight: 600; color: white;">- - - Vegetable Plant Seeds - - -</h1>
+    </div><br>
+    <div class="row" style="text-align: center;">
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed1.jpg">
+          <h4 class="plant-name">Tomato Seeds</h4>
+          <div class="star-rating" id="rating9">
+            <input type="radio" id="rating9-star5" name="rating9" value="5"><label for="rating9-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating9-star4" name="rating9" value="4"><label for="rating9-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating9-star3" name="rating9" value="3"><label for="rating9-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating9-star2" name="rating9" value="2"><label for="rating9-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating9-star1" name="rating9" value="1"><label for="rating9-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹90.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="items">      
+          <img src="Images/vegseed2.jpg">            
+          <h4 class="plant-name">Brinjal Seeds</h4>              
+          <div class="star-rating" id="rating10">               
+            <input type="radio" id="rating10-star5" name="rating10" value="5"><label for="rating10-star5" title="5 stars">&#9733;</label>  
+            <input type="radio" id="rating10-star4" name="rating10" value="4"><label for="rating10-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating10-star3" name="rating10" value="3"><label for="rating10-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating10-star2" name="rating10" value="2"><label for="rating10-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating10-star1" name="rating10" value="1"><label for="rating10-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+              
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed3.jpg">
+          <h4 class="plant-name">Ladies Finger Seeds</h4>
+          <div class="star-rating" id="rating11">
+            <input type="radio" id="rating11-star5" name="rating11" value="5"><label for="rating11-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating11-star4" name="rating11" value="4"><label for="rating11-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating11-star3" name="rating11" value="3"><label for="rating11-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating11-star2" name="rating11" value="2"><label for="rating11-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating11-star1" name="rating11" value="1"><label for="rating11-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+              
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed4.jpg">
+          <h4 class="plant-name">Freanch Beans Seeds</h4>
+          <div class="star-rating" id="rating12">
+            <input type="radio" id="rating12-star5" name="rating12" value="5"><label for="rating12-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating12-star4" name="rating12" value="4"><label for="rating12-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating12-star3" name="rating12" value="3"><label for="rating12-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating12-star2" name="rating12" value="2"><label for="rating12-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating12-star1" name="rating12" value="1"><label for="rating12-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹60.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div> 
+              
+      <div class="col-md-3 col-sm-6">               
+        <div class="items">
+          <img src="Images/vegseed5.jpg">
+          <h4 class="plant-name">Bitter Gourd Seeds</h4>
+          <div class="star-rating" id="rating13">
+            <input type="radio" id="rating13-star5" name="rating13" value="5"><label for="rating13-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating13-star4" name="rating13" value="4"><label for="rating13-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating13-star3" name="rating13" value="3"><label for="rating13-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating13-star2" name="rating13" value="2"><label for="rating13-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating13-star1" name="rating13" value="1"><label for="rating13-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹90.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+                
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed6.jpg">
+          <h4 class="plant-name">Pumpkin Seeds</h4>
+          <div class="star-rating" id="rating14">
+            <input type="radio" id="rating14-star5" name="rating14" value="5"><label for="rating14-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating14-star4" name="rating14" value="4"><label for="rating14-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating14-star3" name="rating14" value="3"><label for="rating14-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating14-star2" name="rating14" value="2"><label for="rating14-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating14-star1" name="rating14" value="1"><label for="rating14-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹60.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button></p>
+        </div>
+      </div>
+                
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed7.jpg">
+          <h4 class="plant-name">Ridge Gourd Seeds</h4>
+          <div class="star-rating" id="rating15">
+            <input type="radio" id="rating15-star5" name="rating15" value="5"><label for="rating15-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating15-star4" name="rating15" value="4"><label for="rating15-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating15-star3" name="rating15" value="3"><label for="rating15-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating15-star2" name="rating15" value="2"><label for="rating15-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating15-star1" name="rating15" value="1"><label for="rating15-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+                
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/vegseed8.jpg">
+          <h4 class="plant-name">Bottle Gourd Seeds</h4>
+          <div class="star-rating" id="rating16">
+            <input type="radio" id="rating16-star5" name="rating16" value="5"><label for="rating16-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating16-star4" name="rating16" value="4"><label for="rating16-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating16-star3" name="rating16" value="3"><label for="rating16-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating16-star2" name="rating16" value="2"><label for="rating16-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating16-star1" name="rating16" value="1"><label for="rating16-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹80.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+          
+    <div class="category-bg">
+      <h1 style="text-align:center;font-family: gabriola;font-size:40px; padding: 10px 0 4px 0; font-weight: 600; color: white;">- - - Tree Plants - - -</h1>
+    </div><br>
+    <div class="row" style="text-align: center;">
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree1.jpg">
+          <h4 class="plant-name" >Coconut Plant</h4>
+          <div class="star-rating" id="rating17">
+            <input type="radio" id="rating17-star5" name="rating17" value="5"><label for="rating17-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating17-star4" name="rating17" value="4"><label for="rating17-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating17-star3" name="rating17" value="3"><label for="rating17-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating17-star2" name="rating17" value="2"><label for="rating17-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating17-star1" name="rating17" value="1"><label for="rating17-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree2.jpg">
+          <h4 class="plant-name">Mango Plant</h4>
+          <div class="star-rating" id="rating18">
+            <input type="radio" id="rating18-star5" name="rating18" value="5"><label for="rating18-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating18-star4" name="rating18" value="4"><label for="rating18-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating18-star3" name="rating18" value="3"><label for="rating18-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating18-star2" name="rating18" value="2"><label for="rating18-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating18-star1" name="rating18" value="1"><label for="rating18-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹100.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree3.jpg">
+          <h4 class="plant-name">Papaya Plant</h4>
+          <div class="star-rating" id="rating19">
+            <input type="radio" id="rating19-star5" name="rating19" value="5"><label for="rating19-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating19-star4" name="rating19" value="4"><label for="rating19-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating19-star3" name="rating19" value="3"><label for="rating19-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating19-star2" name="rating19" value="2"><label for="rating19-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating19-star1" name="rating19" value="1"><label for="rating19-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹100.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree4.jpg">
+          <h4 class="plant-name">Pomegranate Plant</h4>
+          <div class="star-rating" id="rating20">
+            <input type="radio" id="rating20-star5" name="rating20" value="5"><label for="rating20-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating20-star4" name="rating20" value="4"><label for="rating20-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating20-star3" name="rating20" value="3"><label for="rating20-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating20-star2" name="rating20" value="2"><label for="rating20-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating20-star1" name="rating20" value="1"><label for="rating20-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹120.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div> 
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree5.jpg">
+          <h4 class="plant-name">Guava Plant</h4>
+          <div class="star-rating" id="rating21">
+            <input type="radio" id="rating21-star5" name="rating21" value="5"><label for="rating21-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating21-star4" name="rating21" value="4"><label for="rating21-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating21-star3" name="rating21" value="3"><label for="rating21-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating21-star2" name="rating21" value="2"><label for="rating21-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating21-star1" name="rating21" value="1"><label for="rating21-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>  
+          
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree6.jpg">
+          <h4 class="plant-name">Gooseberry Plant</h4>
+          <div class="star-rating" id="rating22">
+            <input type="radio" id="rating22-star5" name="rating22" value="5"><label for="rating22-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating22-star4" name="rating22" value="4"><label for="rating22-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating22-star3" name="rating22" value="3"><label for="rating22-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating22-star2" name="rating22" value="2"><label for="rating22-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating22-star1" name="rating22" value="1"><label for="rating22-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div> 
+        
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree7.jpg">
+          <h4 class="plant-name">Dragon fruit Plant</h4>
+          <div class="star-rating" id="rating23">
+            <input type="radio" id="rating23-star5" name="rating23" value="5"><label for="rating23-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating23-star4" name="rating23" value="4"><label for="rating23-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating23-star3" name="rating23" value="3"><label for="rating23-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating23-star2" name="rating23" value="2"><label for="rating23-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating23-star1" name="rating23" value="1"><label for="rating23-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+        <div class="items">
+          <img src="Images/tree8.jpg">
+          <h4 class="plant-name">Star fruit Plant</h4>
+          <div class="star-rating" id="rating24">
+            <input type="radio" id="rating24-star5" name="rating24" value="5"><label for="rating24-star5" title="5 stars">&#9733;</label>
+            <input type="radio" id="rating24-star4" name="rating24" value="4"><label for="rating24-star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="rating24-star3" name="rating24" value="3"><label for="rating24-star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="rating24-star2" name="rating24" value="2"><label for="rating24-star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="rating24-star1" name="rating24" value="1"><label for="rating24-star1" title="1 star">&#9733;</label>
+          </div>
+          <h4 class="plant-price">Rs: ₹150.00</h4>
+          <button class="buy-now">Buy Now</button>
+          <button class="add2-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row"><br>
+          <div class="col-md-4">
+              <p>Secure Payment<br>(100% Secure)</p>
+          </div>
+          <div class="col-md-4">
+              <p>Free Shipping<br>(For orders on above Rs.499)</p>
+          </div>
+          <div class="col-md-4">
+              <p>Premium Quality<br>(Best plants)</p>
+          </div>
+          <div class="col-md-4">
+              <p>Grown With Love<br><i class="fa fa-heart"></i></p>
+          </div>
+          <div class="col-md-4">
+              <p>Delivered With Care<br><i class="fa fa-truck"></i></p>
+          </div>
+          <div class="col-md-4">
+              <p>Refund Policy<br><i class="fa fa-share-square-o"></i></p>
+          </div>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <span class="my-rights">Created By <span class="credit"><a href="#">Udhayakumar</a></span> | <span class="fa fa-copyright"></span> 2024 All rights reserved.</span>
+  </div>
+
+  <script src="functions.js"></script>
+
+</body>    
+</html>

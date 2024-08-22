@@ -1,0 +1,277 @@
+/* General Navbar Styles */
+.navbar-inverse {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-inverse .navbar-brand img {
+    width: 125px;
+    height: 60px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.navbar-form .form-group {
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+/* Styling for the active navbar item */
+.navbar-inverse .navbar-nav  .active  a,
+.navbar-inverse .navbar-nav  .active  a:focus,
+.navbar-inverse .navbar-nav  .active  a:hover {
+    color: #18bc9c; 
+    background-color:#2c3e50 ; 
+}
+
+.navbar-inverse .navbar-nav .dropdown .active a,
+.navbar-inverse .navbar-nav .dropdown .active a:focus,
+.navbar-inverse .navbar-nav .dropdown .active a:hover {
+    color: #fff;
+    background-color: #18bc9c; 
+}
+
+.navbar-inverse .navbar-nav li a:hover,
+.navbar-inverse .navbar-nav li a:focus {
+    color: #18bc9c;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #ecf0f1;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+  }
+  
+input.nosubmit {
+    width: 260px;
+    border: 1px solid #555;
+    border-radius: 50px;
+    display: block;
+    padding: 6px 4px 6px 40px;
+    background: white ;
+ }
+
+ .glyphicon-search {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.form-group{
+    position: relative;
+}
+
+.navbar-inverse .navbar-form {
+    margin-top: 2px;
+}
+
+.navbar-inverse .navbar-right {
+    margin-right: -30px;
+}
+
+.signin-btn
+{
+    background-color: #18bc9c;
+    border: 2px solid #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 15px;
+    margin: 8px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-btn {
+    background-color: #18bc9c;
+    border: 2px solid #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 21px;
+    margin: 8px 10px 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.signin-btn:hover,
+.login-btn:hover {
+    background-color: transparent;
+    border: 2px solid #18bc9c;
+    color: #18bc9c;
+    box-shadow: 0 0 4px 2px #18bc9c;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #2c3e50;
+}
+
+.navbar-nav .dropdown-menu li a {
+    color: #ecf0f1;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+    background-color: #18bc9c;
+    color: #ecf0f1;
+}
+
+.cart-btn .fa-shopping-cart {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* Mobile Screen Navbar Styles */
+@media (max-width: 600px) {
+    .navbar-inverse .navbar-header {
+        float: none;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        display: block;
+        margin-right: 15px;
+        margin-top: 13px;
+    }
+
+    .navbar-collapse {
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #ecf0f1; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-inverse .navbar-toggle:focus,
+    .navbar-inverse .navbar-toggle:hover{
+        background-color: #2c3e50;
+    }
+    
+    .navbar-inverse .navbar-toggle .icon-bar:nth-child(1) {
+        transform-origin: center;
+    }
+    
+    .navbar-inverse .navbar-toggle .icon-bar:nth-child(3) {
+        transform-origin: center;
+    }
+    
+    .navbar-inverse .navbar-toggle.collapsed .icon-bar:nth-child(2) {
+        opacity: 1; /* Hide the middle bar when toggled (cross state) */
+        transition: opacity 0.1s ease-in-out 0.3s;
+    }
+    
+    .navbar-inverse .navbar-toggle.collapsed .icon-bar:nth-child(1) {
+        transform: none;
+    }
+    
+    .navbar-inverse .navbar-toggle.collapsed .icon-bar:nth-child(3) {
+        transform: none;
+    }
+    
+    /* When the menu is open (not collapsed) */
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+        opacity: 0; /* Ensure the middle bar is visible */
+        transition: opacity 0.1s ease-in-out ;
+    }
+    
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-child(1){
+        transform: translateY(6px) rotate(45deg); /* Bottom bar transforms into part of the 'X' */
+    }
+    .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg); /* Bottom bar transforms into part of the 'X' */;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+
+    .navbar-inverse .navbar-nav li {
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .navbar-inverse .navbar-nav li a {
+        padding: 10px 0;
+    }
+
+    /* .navbar-collapse .dropdown .dropdown-toggle{
+        margin: 0 150px;
+        border-radius: 15px 15px 0 0;
+    } */
+
+    .navbar-inverse .navbar-nav .dropdown-menu{
+        background-color: black;
+        height: 215px;
+    }
+
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu li a {
+        color: white;
+        text-align: center;
+        margin: -20px 0;
+    }
+
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu .active a,
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu .active a:focus,
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu .active a:hover {
+        background-color: #18bc9c;
+        color: #ecf0f1;
+        border-radius: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu li a:hover,
+    .navbar-inverse .navbar-nav .dropdown .dropdown-menu li a:focus {
+        background-color: transparent;
+        color: #18bc9c;
+        border: 1px solid #18bc9c;
+        border-radius: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .navbar-inverse .navbar-form {
+        margin-left: 125px;
+        margin-top: -1px;
+        padding: 3px 15px;
+        width: 40%;
+    }
+
+    .navbar-inverse .navbar-right {
+        float: none;
+        margin: 0;
+    }
+
+    .signin-btn
+    {
+        width: 25%;
+        margin: 20px 0 55px 110px;
+    }
+    .login-btn{
+        width: 25%;
+        margin: 20px 5px;
+    }
+}

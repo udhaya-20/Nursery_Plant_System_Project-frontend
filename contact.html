@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us - Go Green Nursery</title>
+        <link rel="icon" href="images/go_green-favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="Style-Sheets/navbar.css">
+        <link rel="stylesheet" href="Style-Sheets/contact.css">
+        <link rel="stylesheet" href="Style-Sheets/footer.css">
+     </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Mobile scren toggle bars -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- navbar logo -->
+                <a class="navbar-brand" href=""><img src="images/nursery-brand-logo.png" alt="error"></a>
+                <!-- search bar -->
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" id="search" class="nosubmit" placeholder="Search..">
+                  </div>
+                </form>
+            </div>
+
+            <!-- navbar menu lists -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Dropdown menu -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Categories <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="indoor.html">Indoor Plants</a></li>
+                            <li><a href="flower1.html">Flowering Plants</a></li>
+                            <li><a href="herbal.html">Herbal Plants</a></li>
+                            <li><a href="airpurifier.html">Air Purifier Plants</a></li>
+                            <li><a href="balcony.html">Balcony Plants</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                    <!-- shopping cart -->
+                    <li><a class="cart-btn" href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+
+                <!-- Authentication buttons -->
+                <ul class="nav navbar-nav navbar-right">
+                    <button class="signin-btn" onclick="window.location.href='signup.html';">Sign Up</button>
+                    <button class="login-btn" onclick="window.location.href='login.html';">Login</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact page -->
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+        <!-- Contact form -->
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email " required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write Message . . ." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+          <!-- <div class="contact-info">
+              <h2>Our Contact Information</h2>
+              <p><strong>Address:</strong> 123 Nursery Lane, Green City, Country</p>
+              <p><strong>Phone:</strong> +123 456 7890</p>
+              <p><strong>Email:</strong> <a href="mailto:info@nurseryshopping.com">info@nurseryshopping.com</a></p>
+          </div> -->
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="row"><br>
+            <div class="col-md-4">
+                <p>Secure Payment<br>(100% Secure)</p>
+            </div>
+            <div class="col-md-4">
+                <p>Free Shipping<br>(For orders on above Rs.499)</p>
+            </div>
+            <div class="col-md-4">
+                <p>Premium Quality<br>(Best plants)</p>
+            </div>
+            <div class="col-md-4">
+                <p>Grown With Love<br><i class="fa fa-heart"></i></p>
+            </div>
+            <div class="col-md-4">
+                <p>Delivered With Care<br><i class="fa fa-truck"></i></p>
+            </div>
+            <div class="col-md-4">
+                <p>Refund Policy<br><i class="fa fa-share-square-o"></i></p>
+            </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <span class="my-rights">Created By <span class="credit"><a href="#">Udhayakumar</a></span> | <span class="fa fa-copyright"></span> 2024 All rights reserved.</span>
+    </div>
+</body>
+</html>

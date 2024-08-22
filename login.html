@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - Go Green Nursery</title>
+    
+    <link rel="icon" href="images/go_green-favicon.png">
+    <link rel="stylesheet" href="Style-Sheets/login.css">
+</head>
+<body onload="document.getElementById('id01').style.display='block';">
+  <div id="id01" class="login-page">
+    <form class="login-content" action="index.html" method="post">
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+      
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <label>
+        <input type="checkbox" checked="Checked" name="remember">Remember me
+        </label>
+        <!-- submit and cancel buttons -->
+        <div class="btn-container">
+          <div class="button-container">
+            <button type="submit" class="logbtn">Login</button>
+            <button type="button" onclick="cancelLogin()"  class="cancelbtn">Cancel</button>
+          </div>
+
+          <!-- Create account link -->
+          <p style="margin-top: 25px; margin-bottom: 0; text-align: center;">Don't have account? <a href="signup.html">Signin</a></p>
+        </div>      
+      </div>
+    </form>
+  </div>
+
+  <script>
+    var login = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the login --> close it
+    window.onclick = function(event) {
+      if (event.target == login) {
+        login.style.display = "none";
+        window.location.href = "index.html";
+      }
+    }
+
+    function cancelLogin() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

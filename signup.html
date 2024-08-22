@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Go Green Nursery</title>
+    <link rel="icon" href="images/go_green-favicon.png">
+    <link rel="stylesheet" href="Style-Sheets/signin.css">
+</head>
+<body onload="document.getElementById('id01').style.display='block';">
+  <div id="id01" class="signup-page">
+    <form class="signup-content" action="index.html" method="post">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember">Remember me
+        </label>
+        <!-- submit and cancel buttons -->
+        <div class="btn-container">
+          <div class="button-container">
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="button" onclick="cancelLogin()"  class="cancelbtn">Cancel</button>
+          </div>
+
+          <!-- Login link -->
+          <p style="margin-top: 25px; margin-bottom: 0; text-align: center;">Already have account? <a href="login.html" class="loginbtn">Login</a></p>
+        </div>
+      </div>  
+    </form>
+  </div>
+
+  <script>
+    var signup = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == signup) {
+        signup.style.display = "none";
+        window.location.href = "index.html";
+      }
+    }
+
+    function cancelLogin() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
