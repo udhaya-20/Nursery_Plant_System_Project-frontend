@@ -1,1 +1,0 @@
-# Nursery_Plant_System_Project-frontend
